@@ -13,7 +13,7 @@ app.use(express.json());
 // router
 // can handle api accessing routes
 // can handle html request routes
-require("./routes/apiRoutes")(app);
+// require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // listen!
