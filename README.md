@@ -16,7 +16,7 @@ This note taking application uses Express.js to create and save notes, and serve
 
 ## Installation
 
-Visit the note taking application with this link [here.]()
+Visit the note taking application with this link [here.](https://dry-savannah-50842.herokuapp.com/)
 
 ## Usage
 
@@ -39,4 +39,4 @@ Create a new branch and do a pull request, pending review.
 
 ## Links
 
--
+- [App deployed on Heroku](https://dry-savannah-50842.herokuapp.com/)
