@@ -22,7 +22,7 @@ Visit the note taking application with this link [here.]()
 
 Upon opening the application, you are taken to a landing page. From the landing page you can proceed to click on "get started" and then click on the title and text fields to create your note. Once you click on the floppy disk icon, your note will be saved. Saved notes fill the left hand side column to view and/or delete. You can delete your note by pressing the red trash can next to the note.
 
-![Prompts Example](/screenshots/readme-generator-prompts.PNG?raw=true "User Flow Sample")
+![Sample view of app](/screenshots/note-taker-sample.PNG?raw=true "sample of notes view")
 
 ## License
 
