@@ -1,19 +1,21 @@
 // load the note data from the database json file;
 // write new JSON file with FS
+// use path to make sure json file is written to
+// correct directory
 const noteData = require("../db/db.json");
 const fs = require("fs");
 const path = require("path");
 
+// keep track of ID of the note
 let idIncrement = 0;
 
-// routing
+// routing from the require function in server.js
 module.exports = function (app) {
-  // let idIncrement = 0;
-  // returns database file as JSON
+  // GET: returns database file as JSON
   app.get("/api/notes", function (req, res) {
     res.json(noteData);
   });
-
+  // POST: posts a new note
   app.post("/api/notes", function (req, res) {
     const newNote = req.body;
 
@@ -41,16 +43,13 @@ module.exports = function (app) {
         console.log("---- added a new note! ----");
       }
     );
-
+    // return the new note as json
     res.json(newNote);
   });
 
-  // delete method
+  // DELETE: deletes the selected note with specified id
   app.delete("/api/notes/:id", function (req, res) {
     const deleteID = req.params.id;
-    // console.log(deleteID);
-    // console.log(req.body);
-    // const index = noteData.indexOf()
     // go through each note and find the note to delete
     noteData.forEach((note) => {
       if (deleteID === note.id) {
@@ -64,7 +63,6 @@ module.exports = function (app) {
       JSON.stringify(noteData),
       (err) => {
         if (err) throw err;
-
         console.log("---- deleted a note! ----");
       }
     );
